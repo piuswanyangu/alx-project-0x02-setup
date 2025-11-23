@@ -1,0 +1,1 @@
+// accept title and content as props
