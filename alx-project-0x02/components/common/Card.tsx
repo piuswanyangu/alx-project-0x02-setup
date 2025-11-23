@@ -1,6 +1,6 @@
 // accept title and content as props
 import React from "react";
-
+import { CardProps } from "@/interfaces";
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
