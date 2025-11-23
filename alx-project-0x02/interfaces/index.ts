@@ -33,3 +33,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   // Any other props for a standard HTML button (e.g., onClick, type, disabled)
   // are inherited via React.ButtonHTMLAttributes
 }
+
+export interface PostCardProps {
+  /** The unique ID of the post author. */
+  userId: number;
+  /** The unique ID of the post itself. */
+  id: number; // Included for good practice/key
+  /** The title of the post. */
+  title: string;
+  /** The body content of the post. */
+  content: string;
+}
