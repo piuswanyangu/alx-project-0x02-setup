@@ -1,7 +1,8 @@
 // components/common/Button.tsx
 
 import React from 'react';
-import { ButtonProps, ButtonSize, ButtonShape } from '../../interfaces'; // Adjust path as necessary
+import { ButtonProps } from '../../interfaces';
+import { ButtonSize, ButtonShape } from '../../interfaces'; // Adjust path as necessary
 
 // 1. Mapping for Button Sizes
 const sizeMap: Record<ButtonSize, string> = {

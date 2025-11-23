@@ -1,7 +1,7 @@
 // pages/about.tsx
 
 import React from 'react';
-import Button from '../components/common/Button'; // Adjust path as necessary
+import Button from '@/components/common/Button'; // Adjust path as necessary
 
 const About: React.FC = () => {
   return (
