@@ -1,7 +1,7 @@
 // pages/home.tsx
 
 import React from 'react';
-import Card from '../components/common/Card'; // Adjust path as necessary
+import Card from '@/components/common/Card'; // Adjust path as necessary
 
 const Home: React.FC = () => {
   return (
