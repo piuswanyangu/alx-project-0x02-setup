@@ -6,3 +6,15 @@ export interface CardProps {
   content: string;
 }
 
+export interface Post {
+  id: number;
+  title: string;
+  content: string;
+}
+
+export interface PostModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  // Callback function to send the new post data back to the parent
+  onPostSubmit: (newPost: { title: string; content: string }) => void;
+}
