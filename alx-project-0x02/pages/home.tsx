@@ -1,7 +1,8 @@
 // pages/home.tsx
 
 import React, { useState } from 'react';
-import Card from '../components/common/Card';
+import Card from '@/components/common/Card'
+import Header from '@/components/layout/Header';
 import PostModal from '../components/common/PostModal';
 import { Post } from '../interfaces'; // Import the new Post interface
 
