@@ -1,46 +1,45 @@
 // pages/about.tsx
 
 import React from 'react';
-import Button from '@/components/common/Button'; // Adjust path as necessary
+import Header from '../components/layout/Header';
+import Button from '../components/common/Button';
 
 const About: React.FC = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-8">🛠️ About Our Components</h1>
-      <p className="mb-6 text-gray-700">
-        Here we demonstrate the flexibility and reusability of the custom Button component by applying different combinations of 
-        <code className="bg-gray-100 p-1 rounded">size</code> and <code className="bg-gray-100 p-1 rounded">shape</code> props.
-      </p>
+    <>
+      <Header />
+      <div className="p-8 max-w-7xl mx-auto">
+        <h1 className="text-3xl font-bold mb-8 text-gray-800">🛠️ About Our Components</h1>
+        <p className="mb-10 text-gray-700">
+          This page demonstrates the flexibility of the reusable <code className="bg-gray-100 p-1 rounded">Button</code> component 
+          by varying its <code className="bg-gray-100 p-1 rounded">size</code> and <code className="bg-gray-100 p-1 rounded">shape</code> props.
+        </p>
 
-      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-6 items-start">
-        {/* Example 1: Small & Rounded-sm */}
-        <div className="p-4 border rounded-lg shadow-sm w-full md:w-auto">
-          <h3 className="font-semibold mb-2">Small Button (Default Action)</h3>
-          <Button size="small" shape="rounded-sm" onClick={() => alert('Clicked Small')}>
-            Small & Square
-          </Button>
-          <p className="text-sm mt-2 text-gray-500">Props:</p>
-        </div>
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-6 items-start">
+          
+          <div className="p-4 border rounded-lg shadow-md bg-gray-50 w-full md:w-auto">
+            <h3 className="font-semibold mb-3">Small Button</h3>
+            <Button size="small" shape="rounded-sm">
+              Confirm (Small)
+            </Button>
+          </div>
 
-        {/* Example 2: Medium & Rounded-md */}
-        <div className="p-4 border rounded-lg shadow-sm w-full md:w-auto">
-          <h3 className="font-semibold mb-2">Medium Button (Default Look)</h3>
-          <Button size="medium" shape="rounded-md" onClick={() => alert('Clicked Medium')}>
-            Medium & Rounded
-          </Button>
-          <p className="text-sm mt-2 text-gray-500">Props: (default)</p>
-        </div>
+          <div className="p-4 border rounded-lg shadow-md bg-gray-50 w-full md:w-auto">
+            <h3 className="font-semibold mb-3">Medium Button</h3>
+            <Button size="medium" shape="rounded-md">
+              Submit (Medium)
+            </Button>
+          </div>
 
-        {/* Example 3: Large & Rounded-full */}
-        <div className="p-4 border rounded-lg shadow-sm w-full md:w-auto">
-          <h3 className="font-semibold mb-2">Large Button (Primary Action)</h3>
-          <Button size="large" shape="rounded-full" onClick={() => alert('Clicked Large')}>
-            Large & Pill-Shaped
-          </Button>
-          <p className="text-sm mt-2 text-gray-500">Props: </p>
+          <div className="p-4 border rounded-lg shadow-md bg-gray-50 w-full md:w-auto">
+            <h3 className="font-semibold mb-3">Large Button</h3>
+            <Button size="large" shape="rounded-full">
+              Proceed (Large)
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
