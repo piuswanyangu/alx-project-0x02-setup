@@ -8,6 +8,7 @@ const navLinks = [
   { href: '/', label: 'Home' }, // Assuming '/' also routes to Home
   { href: '/about', label: 'About' },
   { href: '/posts', label: 'Posts' },
+  { href: '/users', label: 'Users' }
 ];
 
 const Header: React.FC = () => {
